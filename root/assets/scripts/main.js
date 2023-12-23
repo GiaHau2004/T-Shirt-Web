@@ -1,11 +1,15 @@
-function autoResizeIframe() {
-    var iframe = document.getElementById('autoResizeIframe');
-    if (iframe) {
-        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-    }
-}
+document.addEventListener("DOMContentLoaded", function () {
+    $(function () {
+        $("#header").load("/root/includes/header.html");
+    });
+    $(function(){
+        $("#banner").load("/root/includes/banner.html");
+    })
+    $(function(){
+        $("#product").load("/root/includes/product.html");
+    })
+    $(function(){
+        $("#advertisement").load("/root/includes/advertisement.html");
+    })
 
-// Gọi hàm khi iframe đã được tải
-document.getElementById('autoResizeIframe').onload = function() {
-    autoResizeIframe();
-};
+});
