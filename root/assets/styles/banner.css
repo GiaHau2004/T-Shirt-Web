@@ -1,0 +1,23 @@
+.banner {
+    text-align: right;
+    background-color: #faedeb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner img{
+    float: right;
+    text-align: right;
+}
+.banner .content{
+    text-align: left;
+    font-size: 30px
+}
+
+.banner .content button{
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
