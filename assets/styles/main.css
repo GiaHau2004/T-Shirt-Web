@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    width: 100%;
+    text-align: right;
+    background-color: #faedeb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.banner .content {
+    display: flex;
+    align-items: center;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.banner .img {
+    float: right;
+    text-align: right;
+    width: 50%;
+    height: 100%;
+}
+
+.banner .img img {
+    width: 100%;
+}
+
+.banner .content {
+    text-align: left;
+    font-size: 30px
+}
+
+.banner .content button {
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+
+.product {
+    background-color: white;
+    display: list-item;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.product h1 {
+    font-size: 35px;
+}
+
+.product ul {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product li {
+    list-style: none;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: 330px;
+}
+
+.product li .detail {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.widget {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.widget .item {
+    width: 50%;
+}
+
+.widget .item .content button {
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    border: none;
+    color: white;
+}
+
+.widget-1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/portrait-young-couple-yellow_158595-5532.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.widget-1 .widget-content {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+}
+
+.widget-1 .widget-content button {
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 50px;
+}
+footer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
