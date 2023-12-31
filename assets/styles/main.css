@@ -1,157 +1,494 @@
+@import url(header.css);
+@import url(footer.css);
+
 * {
     margin: 0;
     padding: 0;
-}
-
-body,
-html {
-    margin: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 25px;
-    padding-right: 25px;
-    height: 100%;
-    scroll-behavior: smooth;
-}
-
-section {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.banner {
-    width: 100%;
-    text-align: right;
-    background-color: #faedeb;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-}
-
-.banner .content {
-    display: flex;
-    align-items: center;
-    float: left;
-    width: 50%;
-    height: 100%;
-}
-
-.banner .img {
-    float: right;
-    text-align: right;
-    width: 50%;
-    height: 100%;
-}
-
-.banner .img img {
-    width: 100%;
-}
-
-.banner .content {
-    text-align: left;
-    font-size: 30px
-}
-
-.banner .content button {
-    cursor: pointer;
-    width: 150px;
-    height: 50px;
-    background-color: black;
-    color: white;
-}
-
-.product {
-    background-color: white;
-    display: list-item;
-    text-align: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.product h1 {
-    font-size: 35px;
-}
-
-.product ul {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-.product li {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
     list-style: none;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+h5 {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+h6 {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
     text-align: center;
+    cursor: pointer;
 }
 
-.product img {
-    width: 100%;
-    height: 330px;
-}
-
-.product li .detail {
-    margin-left: 20px;
-    text-align: left;
+.element {
+    flex: 1;
 }
 
 .widget {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
-    overflow: hidden;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-.widget .item {
-    width: 50%;
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
 }
 
-.widget .item .content button {
-    width: 150px;
-    height: 50px;
-    background-color: black;
-    border: none;
-    color: white;
+.container {
+    width: 100%;
 }
 
-.widget-1 {
+.container section {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+}
+
+.container section .banner {
+    display: flex;
     width: 100%;
     height: 100%;
-    background-image: url(../images/portrait-young-couple-yellow_158595-5532.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: rgb(250, 237, 235);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
-.widget-1 .widget-content {
-    background: rgba(0, 0, 0, 0.5);
+.container section .banner .banner-content {
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+
+.container section .banner .img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+
+.container section .banner .img img {
+    width: 100%;
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+
+.container section .widget .list {
+    width: 100%;
+    height: 100%;
+    display: list-item;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.container section .widget .list .list-content {
     width: 100%;
     height: 100%;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
-    color: white;
-    font-size: 30px;
 }
 
-.widget-1 .widget-content button {
-    width: 150px;
-    height: 50px;
-    background-color: black;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin: 50px;
-}
-footer {
+.container section .widget .list .list-content .product {
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    display: list-item;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.container section .widget .list .list-content .product .product-img {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.container section .widget .list .list-content .product .product-img img {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.container section .widget .list .list-content .product .product-text {
+    width: 100%;
+    height: 100%;
+    display: list-item;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.container section .widget-1 {
+    width: 100%;
+    height: 100%;
+}
+
+.container section .widget-1 .content-1 {
+    width: 49%;
+    float: left;
+    display: list-item;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.container section .widget-1 .content-2 {
+    float: right;
+    width: 49%;
+    background-image: url(../images/w1.jpg);
+}
+
+.container section .widget-1 .img {
+    width: 100%;
+    height: 100%;
+}
+
+.container section .widget-1 .img img {
+    width: 100%;
+}
+
+.container section .widget-2 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/portrait-young-couple-yellow_158595-5532.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container section .widget-2 .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container section .widget-2 .content .text h6 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.container section .widget-2 .content .text h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.container section .widget-2 .content .text h4 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.container section .widget-3 {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container section .widget-3 .content-1 {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(250, 237, 235);
+}
+
+.container section .widget-3 .content-2 {
+    text-align: left;
+    position: relative;
+}
+
+.container section .widget-3 .content-2 .text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.container section .widget-3 .img {
+    text-align: left;
+    position: absolute;
+    top: -10%;
+    left: 0;
+}
+
+.container section .widget-3 .img img {
+    width: 90%;
+}
+
+.container section .reviews {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.container section .reviews .content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.container section .reviews .content .text .icon-star i {
+    color: #f1c40f;
+}
+
+.container section .widget-4 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.container section .widget-4 .content-1 {
+    width: 100%;
+    height: 100%;
+    padding-right: 10px;  
+}
+
+.container section .widget-4 .content-2 {
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+}
+
+.container section .widget-4 .img {
+    width: 100%;
+    height: 100%;
+}
+
+.container section .widget-4 .img img {
+    width: 100%;
+}
+.container section .widget-4 button{
+    width: 95%;
+}
+.container footer {
+    width: 100%;
+    height: 600px;
+}
+
+@media screen and (max-width: 768px) {
+    .btn {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .container section {
+        height: auto;
+    }
+
+    .container section .banner {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container section .banner .banner-content {
+        display: list-item;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50%;
+    }
+
+    .container section .banner .banner-content .banner-text {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container section .banner .img {
+        height: 50%;
+        display: flex;
+        text-align: left;
+        align-items: center;
+    }
+
+    .container section .widget .list .list-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .container section .widget .list .list-content .product {
+        box-sizing: border-box;
+    }
+
+    .container section .widget .list .list-content .product .product-text h3 {
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container section .widget .list .list-content .product .product-text p {
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container section .widget-1 .content-1 {
+        float: none;
+        width: 100%;
+    }
+
+    .container section .widget-1 .content-2 {
+        float: none;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container section .widget-3 {
+        width: 100%;
+        height: auto;
+        display: list-item;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        position: static;
+    }
+
+    .container section .widget-3 .content-1 {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(250, 237, 235);
+    }
+
+    .container section .widget-3 .content-2 {
+        background-color: aqua;
+        text-align: left;
+        position: relative;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .container section .widget-3 .content-2 .text {
+        background-color: rgb(250, 237, 235);
+        width: 100%;
+        position: static;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+    }
+
+    .container section .widget-3 .img {
+        text-align: left;
+        position: static;
+    }
+
+    .container section .widget-3 .img img {
+        width: 100%;
+    }
+
+    .container section .reviews .content {
+        width: 100%;
+        font-size: 15px;
+    }
 }

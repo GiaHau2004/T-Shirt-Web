@@ -1,0 +1,68 @@
+.footer {
+    background-color: rgb(250, 237, 235);
+    width: 100%;
+    height: 100%;
+}
+.message {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.message-content{
+    width: 400px;
+    height: 400px;
+    display: grid;
+}
+.box{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.box input{
+    margin: 5px;
+    width: 50%;
+    height: 40px;
+}
+.box input:last-child{
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+.directory{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.directory a{
+    margin: 10px 40px;
+    color: black;
+    text-decoration: none;
+}
+.social-media{
+    width: 100%;
+}
+.social-media a{
+    margin: 10px;
+    color: black;
+    font-size: 20px;
+}
+.author{
+    background-color: black;
+    width: 100%;
+    height: 10%;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}

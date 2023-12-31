@@ -1,0 +1,195 @@
+i{
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+.header {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 10px 0;
+}
+.header .element {
+    flex: 1;
+}
+
+.navigation {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-self: center;
+}
+
+.navigation .viewport {
+    display: none;
+}
+
+.navigation ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.navigation ul li {
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+}
+
+.navigation ul li a {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.navigation ul li a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo .img {
+    width: 30%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.utility {
+    display: flex;
+    text-align: right;
+    align-items: center;
+    justify-content: center;
+}
+
+.utility .search-bar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: end;
+}
+
+.utility .search-bar input {
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.utility .search-bar input:focus {
+    border-color: #333;
+}
+
+.utility .search-bar button {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        flex-direction: row-reverse;
+    }
+
+    .navigation {
+        text-align: left;
+    } 
+    .navigation .icon-bar{
+        z-index: 1;
+        margin-left: 20px;
+    }
+    .navigation .viewport {
+        width: 100%;
+        display: flex;
+        text-align: right;
+        justify-content: flex-end;
+    }
+    .navigation i {
+        font-size: 20px;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        background-color: rgb(250, 237, 235);
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        transition: all 0.3s ease;
+        text-align: left;
+        justify-content: start;
+    }
+    .navigation ul li{
+        text-align: left;
+        display: flex;
+        text-align: left;
+        justify-content: start;
+    }
+    .navigation ul li a{
+        width: 100%;
+        text-align: left;
+        display: flex;
+        text-align: left;
+        justify-content: start;
+    }
+    .logo {
+        text-align: left;
+        justify-content: flex-start;
+    }
+
+    .logo .img {
+        width: 50%;
+        text-align: left;
+        justify-content: flex-start;
+    }
+
+    .utility {
+        display: none;
+    }
+}

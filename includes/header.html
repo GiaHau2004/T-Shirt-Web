@@ -1,104 +1,35 @@
-<style>
-    .header {
-        background-color: white;
-        display: flex;
-        align-items: center;
-    }
-
-    .navigation,
-    .logo,
-    .utility {
-        flex-grow: 1;
-        text-align: center;
-        width: 33.33%;
-        overflow: hidden;
-        height: 100%;
-    }
-
-    .navigation ul {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 100%;
-    }
-
-    .navigation ul li {
-        list-style: none;
-        height: 100%;
-    }
-
-    .navigation ul li a {
-        color: black;
-        text-decoration: none;
-        font-size: 15px;
-    }
-
-    .logo {
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .logo .img {
-        width: 100px;
-    }
-
-    .logo img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .utility {
-        display: flex;
-        justify-content: flex-end;
-    }
-    .utility .cart{
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-    }
-    .utility-child {
-        padding: 0 50px;
-    }
-    .utility-child:first-child{
-        padding-left: 0;
-    }
-    .utility-child:last-child {
-        padding-right: 0;
-    }
-
-    .utility-child:first-child button {
-        background-color: white;
-        border: none;
-    }
-</style>
 <div class="header">
-    <div class="navigation">
-        <ul>
-            <li><a href="">BUY T-SHIRTS</a></li>
-            <li><a href="">WOMEN</a></li>
-            <li><a href="">MEN</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">CONTACT</a></li>
+    <div class="navigation element">
+        <div class="viewport">
+            <div class="cart utility-child">
+                <span>$0.00</span>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div onclick="showMenu()" id="icon-bar" class="icon-bar"> <i class="fa-solid fa-bars element"></i></div>
+        </div>
+        <ul id="menu">
+            <li class="element"><a href="">T-SHIRTS</a></li>
+            <li class="element"><a href="">WOMEN</a></li>
+            <li class="element"><a href="">MEN</a></li>
+            <li class="element"><a href="">ABOUT</a></li>
+            <li class="element"><a href="">CONTACT</a></li>
         </ul>
     </div>
-    <div class="logo">
+    <div class="logo element">
         <div class="img">
             <a href=""><img src="../assets/images/logo/logo-retina.png" alt=""></a>
         </div>
     </div>
-    <div class="utility">
-        <div class="search-bar utility-child">
+    <div class="utility element">
+        <div class="search-bar utility-child element">
+            <input type="text" placeholder="Search">
             <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
-        <div class="cart utility-child">
-            <i class="fa-solid fa-dollar-sign"></i>
-            <span>0.00</span>
+        <div class="cart utility-child element">
+            <span>$0.00</span>
             <i class="fa-solid fa-cart-shopping"></i>
         </div>
-        <div class="account utility-child"><i class="fa-solid fa-user"></i></div>
+        <div class="account utility-child element"><i class="fa-solid fa-user"></i></div>
     </div>
 </div>
 <script src="https://kit.fontawesome.com/b20f64887f.js" crossorigin="anonymous"></script>
