@@ -9,6 +9,7 @@ function loadHTML(path, idTarget) {
 document.addEventListener("DOMContentLoaded", function () {
     loadHTML('../includes/header.html', 'header');
     loadHTML('../includes/footer.html', 'footer');
+    loadHTML('/pages/home.html', 'page');
 });
 
 function showMenu() {
