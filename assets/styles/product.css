@@ -1,0 +1,37 @@
+.container section .nav a {
+    text-decoration: none;
+}
+
+.container section .sort {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.product-img img {
+    width: 100%;
+    height: auto;
+}
+
+.product-text {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
